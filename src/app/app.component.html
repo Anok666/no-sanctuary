@@ -1,28 +1,237 @@
-<svg id="background" width='1728' height='1235' viewBox="0 0 1728 1235" fill='none' xmlns='http://www.w3.org/2000/svg'><g opacity='0.75' filter='url(#filter0_f_39_143)'><circle cy='1000' r='264' fill='url(#paint0_linear_39_143)'/></g><g opacity='0.65' filter='url(#filter1_f_39_143)'><circle cx='1720' cy='264' r='379' fill='url(#paint1_linear_39_143)'/></g><defs><filter id='filter0_f_39_143' x='-485' y='515' width='970' height='970' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/><feGaussianBlur stdDeviation='110.5' result='effect1_foregroundBlur_39_143'/></filter><filter id='filter1_f_39_143' x='1120' y='-336' width='1200' height='1200' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/><feGaussianBlur stdDeviation='110.5' result='effect1_foregroundBlur_39_143'/></filter><linearGradient id='paint0_linear_39_143' x1='196.5' y1='902' x2='-2.55853e-05' y2='1264' gradientUnits='userSpaceOnUse'><stop stop-color="var(--bttm-left-blur-1)"/><stop offset='1' stop-color="var(--bttm-left-blur-2)"/></linearGradient><linearGradient id='paint1_linear_39_143' x1='1720' y1='-115' x2='1720' y2='643' gradientUnits='userSpaceOnUse'><stop stop-color="var(--top-right-blur-1)"/><stop offset='1' stop-color="var(--top-right-blur-2)" /></linearGradient></defs></svg>     
-<div id="content">
-  <div class="header">
-    <h1>Quickstart Template</h1>
-    <div class="logo">
-      <img src="https://user-images.githubusercontent.com/43764894/223549637-2715c89d-a44e-42e0-8f6c-fa6246279658.png">
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  :host {
+    --bright-blue: oklch(51.01% 0.274 263.83);
+    --electric-violet: oklch(53.18% 0.28 296.97);
+    --french-violet: oklch(47.66% 0.246 305.88);
+    --vivid-pink: oklch(69.02% 0.277 332.77);
+    --hot-red: oklch(61.42% 0.238 15.34);
+    --orange-red: oklch(63.32% 0.24 31.68);
+
+    --gray-900: oklch(19.37% 0.006 300.98);
+    --gray-700: oklch(36.98% 0.014 302.71);
+    --gray-400: oklch(70.9% 0.015 304.04);
+
+    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
+      180deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+      90deg,
+      var(--orange-red) 0%,
+      var(--vivid-pink) 50%,
+      var(--electric-violet) 100%
+    );
+
+    --pill-accent: var(--bright-blue);
+
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    font-size: 3.125rem;
+    color: var(--gray-900);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+    margin: 0;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+  }
+
+  p {
+    margin: 0;
+    color: var(--gray-700);
+  }
+
+  main {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: inherit;
+    position: relative;
+  }
+
+  .angular-logo {
+    max-width: 9.2rem;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .content h1 {
+    margin-top: 1.75rem;
+  }
+
+  .content p {
+    margin-top: 1.5rem;
+  }
+
+  .divider-temp {
+    width: 1px;
+    background: var(--red-to-pink-to-purple-vertical-gradient);
+    margin-inline: 0.5rem;
+  }
+
+  .divider {
+    width: 1px;
+    margin-inline: 0.5rem;
+  }
+
+  .pill-group {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .pill {
+    display: flex;
+    align-items: center;
+    --pill-accent: var(--bright-blue);
+    background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
+    color: var(--pill-accent);
+    padding-inline: 0.75rem;
+    padding-block: 0.375rem;
+    border-radius: 2.75rem;
+    border: 0;
+    transition: background 0.3s ease;
+    font-family: var(--inter-font);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4rem;
+    letter-spacing: -0.00875rem;
+    text-decoration: none;
+  }
+
+  .pill:hover {
+    background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
+  }
+
+  .pill-group .pill:nth-child(6n + 1) {
+    --pill-accent: var(--bright-blue);
+  }
+  .pill-group .pill:nth-child(6n + 2) {
+    --pill-accent: var(--french-violet);
+  }
+  .pill-group .pill:nth-child(6n + 3),
+  .pill-group .pill:nth-child(6n + 4),
+  .pill-group .pill:nth-child(6n + 5) {
+    --pill-accent: var(--hot-red);
+  }
+
+  .pill-group svg {
+    margin-inline-start: 0.25rem;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.73rem;
+    margin-top: 1.5rem;
+  }
+
+  .social-links path {
+    transition: fill 0.3s ease;
+    fill: var(--gray-400);
+  }
+
+  .social-links a:hover svg path {
+    fill: var(--gray-900);
+  }
+
+  .left-side {
+    width: 10%;
+    height: 100%;
+    background: #000000;
+  }
+
+  .right-side {
+    width: 90%;
+    height: 100%;
+    background: white;
+  }
+
+  @media screen and (max-width: 650px) {
+    .content {
+      flex-direction: column;
+      width: max-content;
+    }
+
+    .divider {
+      height: 1px;
+      width: 100%;
+      background: var(--red-to-pink-to-purple-horizontal-gradient);
+      margin-block: 1.5rem;
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 40px;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  footer p {
+    font-size: 12px;
+    color: var(--gray-400);
+  }
+</style>
+
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+      <div style="margin: auto; display: flex; padding-top: 64px;">
+        <object id="myLogo" data="logo.svg" type="image/svg+xml" style="width: 75%; margin: auto;"></object>
+      </div>
+
     </div>
-    <h2>
-      This is a bare-bones Angular project that has everything you need to quickly deploy it to Netlify
-    </h2>
-    <div class="bttns">
-      <a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/angular-quickstart" class="bttn primary">Deploy to Netlify</a>
-      <a href="https://github.com/netlify-templates/angular-quickstart" class="bttn secondary">View Repo</a>
+    <div class="divider" role="separator" aria-label="Divider"></div>
+    <div class="right-side">
+     <!-- <menu>
+          <ul class="pill-group">
+            <li class="pill"><a routerLink="/news" routerLinkActive="active" ariaCurrentWhenActive="page">news</a></li>
+            <li class="pill">distro</li>
+            <li class="pill">kontakt</li>
+            <li class="pill">news</li>
+          </ul>
+      </menu> -->
+      <router-outlet />
     </div>
   </div>
-  <div class="resource-list">
-    <ul>
-      <li>
-        <a href="https://www.netlify.com/tags/angular/">Netlify Blog: Angular posts</a>
-      <li>
-        <a href="https://docs.netlify.com/">Netlify Docs</a>
-      </li>
-      <li>
-        <a href="https://angular.io/">Angular Docs</a>
-      </li>
-    </ul>
-  </div>
-</div>
+  <footer>
+      <p><span><strong><h1>No Sanctuary</h1></strong> A.K.A <strong>Dwie Strony Medalu</strong> records</span></p>
+  </footer>
+</main>
